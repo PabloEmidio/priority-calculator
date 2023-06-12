@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "priority-calculator"
+version = "0.1.0"
+description = "Calculate how many hours spend in each task with a priority system calculator."
+authors = ["Pablo Emidio <p.emidiodev@gmail.com>"]
+readme = "README.md"
+packages = [{include = "priority_calculator", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.scripts]
+priority_calculator = 'priority_calculator.main:main'
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
